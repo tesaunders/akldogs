@@ -10,12 +10,12 @@ A dataframe with 12 rows and 9 columns:
 \item{year}{Financial year data was reported}
 \item{prosecutions}{Total prosecutions or appeals}
 \item{infringements}{Total infringements issued}
-\item{failure-bylaw}{Infringements issued under s20(5) - Failure to comply with any bylaw authorised by the section}
-\item{failure-control}{Infringements issued under s53(1) - Failure to keep dog under control}
-\item{failure-disqual}{Infringements issued under s53(1) - Failure to comply with the effects of disqualification}
-\item{failure-menacing}{Infringements issued under s33EC(1) - Failure to comply with effects of classification of dog as menacing dog}
-\item{failure-register}{Infringements issued under s42 - Failure to register dog}
-\item{obstruction-officer}{Infringements issued under s18 - Wilful obstruction of dog control officer or ranger}
+\item{failure_bylaw}{Infringements issued under s20(5) - Failure to comply with any bylaw authorised by the section}
+\item{failure_control}{Infringements issued under s53(1) - Failure to keep dog under control}
+\item{failure_disqual}{Infringements issued under s53(1) - Failure to comply with the effects of disqualification}
+\item{failure_menacing}{Infringements issued under s33EC(1) - Failure to comply with effects of classification of dog as menacing dog}
+\item{failure_register}{Infringements issued under s42 - Failure to register dog}
+\item{obstruction_officer}{Infringements issued under s18 - Wilful obstruction of dog control officer or ranger}
 }
 }
 \source{
