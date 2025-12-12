@@ -26,12 +26,16 @@ You can install akldogs from [GitHub](https://github.com/) with:
 remotes::install_github("tesaunders/akldogs")
 ```
 
-## Data notes
+## Data
 
+Data in this package is sourced from Auckland Council Animal Management
+[annual
+reports](https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html).
 This package contains the most relevant data for looking at dog control
-activities, and some data from annual reports has been omitted. Animal
+activities, so some data from these reports have been omitted. Animal
 Management has changed the way they report data in their reports over
-time, and other data is missing from earlier reports entirely.
+time, and other data is missing from earlier reports, so please note the
+following:
 
 - A reduction in the known dog population from FY2017 to FY2018 is
   likely due to the removal of duplicate entries in the Auckland Council
