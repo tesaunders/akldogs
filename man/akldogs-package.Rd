@@ -8,6 +8,13 @@
 \description{
 Auckland Council data relating to dog control, taken from Animal Management annual reports.
 }
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://tesaunders.github.io/akldogs/}
+}
+
+}
 \author{
 \strong{Maintainer}: Tom Saunders \email{tom.saunders@auckland.ac.nz}
 
