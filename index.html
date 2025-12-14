@@ -5,14 +5,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Auckland Council Animal Management data • akldogs</title>
+<title>Auckland Council Dog Management Data • akldogs</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
-<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Auckland Council Animal Management data">
-<meta name="description" content="Auckland Council data relating to dog control, taken from Animal Management annual reports.">
-<meta property="og:description" content="Auckland Council data relating to dog control, taken from Animal Management annual reports.">
+<script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Auckland Council Dog Management Data">
+<meta name="description" content="Data relating to managing dogs in Auckland, taken from Auckland Council Animal Management annual reports.">
+<meta property="og:description" content="Data relating to managing dogs in Auckland, taken from Auckland Council Animal Management annual reports.">
+<meta property="og:image" content="https://tesaunders.github.io/akldogs/logo.png">
 </head>
 <body>
     <a href="#main" class="visually-hidden-focusable">Skip to contents</a>
@@ -45,11 +46,14 @@
 </nav><div class="container template-home">
 <div class="row">
   <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="akldogs">akldogs<a class="anchor" aria-label="anchor" href="#akldogs"></a>
-</h1></div>
+<div class="page-header">
+<img src="logo.png" class="logo" alt=""><h1 id="akldogs-">akldogs 
+<a class="anchor" aria-label="anchor" href="#akldogs-"></a>
+</h1>
+</div>
 <!-- badges: start -->
-<!-- badges: end -->
-<p>This package contains data taken from Auckland Council’s annual Animal Management reports relating to dogs and their management in Auckland, and provides the following data tables:</p>
+
+<p>akldogs contains data transcribed from Auckland Council’s annual Animal Management reports relating to dogs and their management in Auckland. The goal is to make this data more accessible to R users by providing the following data tables:</p>
 <ul>
 <li>
 <code>dogs</code>: the Auckland dog population</li>
@@ -73,7 +77,7 @@
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>Data in this package is sourced from Auckland Council Animal Management <a href="https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html" class="external-link">annual reports</a>. This package contains the most relevant data for looking at dog control activities, so some data from these reports have been omitted. Animal Management has changed the way they report data in their reports over time, and other data is missing from earlier reports, so please note the following:</p>
+<p>Data is sourced from Auckland Council Animal Management <a href="https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html" class="external-link">annual reports</a>. This package contains only the most relevant data for looking at dog control activities. The way data has been reported over time by Animal Management has changed, so please note the following</p>
 <ul>
 <li>A reduction in the known dog population from FY2017 to FY2018 is likely due to the removal of duplicate entries in the Auckland Council database.</li>
 <li>Where percentages are given instead of whole numbers, the numbers have been derived from the proportions and given to the nearest whole number, as is the case with some desexing data.</li>
@@ -83,25 +87,12 @@
 <li>‘East’ team was added to the requests for service data from 2024, and some earlier teams were removed and the numbers added to ‘other’ categories for the two priority types between FY2015-FY2017 and FY2021-FY2022.</li>
 </ul>
 </div>
-<div class="section level2">
-<h2 id="data-licencing">Data licencing<a class="anchor" aria-label="anchor" href="#data-licencing"></a>
-</h2>
-<p>The data provided in Auckland Council reports is subject to the following <a href="https://www.aucklandcouncil.govt.nz/en/terms-and-conditions.html" class="external-link">copyright provisions</a>:</p>
-<p>You are permitted to access, view, print, and copy the material for non-commercial personal or internal business purposes. You may also reproduce material free of charge and without further permission, so long as you:</p>
-<ul>
-<li>do so for informational purposes</li>
-<li>reproduce it accurately</li>
-<li>do not use it in a misleading or derogatory context</li>
-<li>acknowledge that the information is sourced from Auckland Council and is subject to copyright.</li>
-</ul>
-<p>You are not permitted to copy and sell or exploit for commercial purposes, any material.</p>
-</div>
 </div>
   </main><aside class="col-md-3"><div class="license">
 <h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
-<li>file <a href="LICENSE-text.html">LICENSE</a>
-</li>
+<li><a href="LICENSE.html">Full license</a></li>
+<li><small>CC0</small></li>
 </ul>
 </div>
 
@@ -116,18 +107,23 @@
 <div class="developers">
 <h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
-<li>Tom Saunders <br><small class="roles"> Author, maintainer </small>   </li>
+<li>Thomas Saunders E. <br><small class="roles"> Author, maintainer, copyright holder </small> <a href="https://orcid.org/0000-0003-1780-0314" target="orcid.widget" aria-label="ORCID" class="external-link"><span class="fab fa-orcid orcid" aria-hidden="true"></span></a>  </li>
 </ul>
 </div>
 
-
+<div class="dev-status">
+<h2 data-toc-skip>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R-CMD-check"></a></li>
+</ul>
+</div>
 
   </aside>
 </div>
 
 
     <footer><div class="pkgdown-footer-left">
-  <p>Developed by Tom Saunders.</p>
+  <p>Developed by Thomas Saunders E..</p>
 </div>
 
 <div class="pkgdown-footer-right">
