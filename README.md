@@ -21,7 +21,7 @@ the following data tables:
 
 ## Installation
 
-You can install akldogs from [GitHub](https://github.com/) with:
+You can install akldogs from GitHub with:
 
 ``` r
 # install.packages("remotes")

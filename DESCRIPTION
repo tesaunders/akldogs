@@ -18,4 +18,4 @@ LazyData: true
 Imports: 
     lifecycle,
     tibble
-URL: https://tesaunders.github.io/akldogs/
+URL: https://tesaunders.github.io/akldogs/, https://github.com/tesaunders/akldogs
