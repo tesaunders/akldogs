@@ -2,7 +2,7 @@ Package: akldogs
 Title: Auckland Council Dog Management Data
 Version: 0.0.0.9000
 Authors@R: 
-    person("Thomas", "E.", "Saunders", 
+    person("Thomas", "Saunders", "E.", 
     email = "tom.saunders@auckland.ac.nz", 
     role = c("aut", "cre", "cph"),
     comment = c(ORCID = "0000-0003-1780-0314")
