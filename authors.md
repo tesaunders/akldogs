@@ -7,6 +7,9 @@
 
 ## Citation
 
+Source:
+[`DESCRIPTION`](https://github.com/tesaunders/akldogs/blob/main/DESCRIPTION)
+
 E. TS (2025). *akldogs: Auckland Council Dog Management Data*. R package
 version 0.0.0.9000, <https://tesaunders.github.io/akldogs/>.
 
