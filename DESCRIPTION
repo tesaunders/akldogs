@@ -1,10 +1,14 @@
 Package: akldogs
-Title: Auckland Council Animal Management data
+Title: Auckland Council Dog Management Data
 Version: 0.0.0.9000
 Authors@R: 
-    person("Tom", "Saunders", , "tom.saunders@auckland.ac.nz", role = c("aut", "cre"))
-Description: Auckland Council data relating to dog control, taken from Animal Management annual reports.
-License: file LICENSE
+    person("Thomas", "E.", "Saunders", 
+    email = "tom.saunders@auckland.ac.nz", 
+    role = c("aut", "cre", "cph"),
+    comment = c(ORCID = "0000-0003-1780-0314")
+    )
+Description: Data relating to managing dogs in Auckland, taken from Auckland Council Animal Management annual reports.
+License: CC0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
@@ -12,5 +16,6 @@ Depends:
     R (>= 3.5)
 LazyData: true
 Imports: 
+    lifecycle,
     tibble
 URL: https://tesaunders.github.io/akldogs/

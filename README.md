@@ -1,15 +1,17 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# akldogs
+# akldogs <a href="https://tesaunders.github.io/akldogs/"><img src="man/figures/logo.png" align="right" height="139" alt="akldogs website" /></a>
 
 <!-- badges: start -->
 
+[![R-CMD-check](https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-This package contains data taken from Auckland Council’s annual Animal
-Management reports relating to dogs and their management in Auckland,
-and provides the following data tables:
+akldogs contains data transcribed from Auckland Council’s annual Animal
+Management reports relating to dogs and their management in Auckland.
+The goal is to make this data more accessible to R users by providing
+the following data tables:
 
 - `dogs`: the Auckland dog population
 - `owners`: Auckland dog owners
@@ -28,14 +30,11 @@ remotes::install_github("tesaunders/akldogs")
 
 ## Data
 
-Data in this package is sourced from Auckland Council Animal Management
-[annual
+Data is sourced from Auckland Council Animal Management [annual
 reports](https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html).
-This package contains the most relevant data for looking at dog control
-activities, so some data from these reports have been omitted. Animal
-Management has changed the way they report data in their reports over
-time, and other data is missing from earlier reports, so please note the
-following:
+This package contains only the most relevant data for looking at dog
+control activities. The way data has been reported over time by Animal
+Management has changed, so please note the following
 
 - A reduction in the known dog population from FY2017 to FY2018 is
   likely due to the removal of duplicate entries in the Auckland Council
@@ -55,23 +54,3 @@ following:
   some earlier teams were removed and the numbers added to ‘other’
   categories for the two priority types between FY2015-FY2017 and
   FY2021-FY2022.
-
-## Data licencing
-
-The data provided in Auckland Council reports is subject to the
-following [copyright
-provisions](https://www.aucklandcouncil.govt.nz/en/terms-and-conditions.html):
-
-You are permitted to access, view, print, and copy the material for
-non-commercial personal or internal business purposes. You may also
-reproduce material free of charge and without further permission, so
-long as you:
-
-- do so for informational purposes
-- reproduce it accurately
-- do not use it in a misleading or derogatory context
-- acknowledge that the information is sourced from Auckland Council and
-  is subject to copyright.
-
-You are not permitted to copy and sell or exploit for commercial
-purposes, any material.
