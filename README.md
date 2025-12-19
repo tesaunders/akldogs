@@ -8,16 +8,28 @@
 [![R-CMD-check](https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/tesaunders/akldogs/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-akldogs contains data transcribed from Auckland Council’s annual Animal
-Management reports relating to dogs and their management in Auckland.
-The goal is to make this data more accessible to R users by providing
-the following data tables:
+akldogs contains data relating to dogs and their management in Auckland.
+Data is sourced from Auckland Council’s annual Animal Management reports
+and a Local Government Official Information Act request. The goal is to
+make this data more accessible to R users.
+
+The following summary tables are sourced from Animal Management annual
+reports:
 
 - `dogs`: the Auckland dog population
 - `owners`: Auckland dog owners
 - `enforcement`: compliance and enforcement activities
 - `impounds`: outcomes of dogs entering shelters
 - `service`: Animal Management requests for service
+
+The following tables are sourced from a Local Government Official
+Information Act request (#8140017948) made on 21 November 2025, and
+responded to on 18 December 2025:
+
+- `dogs_raw`: raw data for each dog known to Animal Management as at
+  FY2025
+- `impounds_raw`: raw data for each impound event as at FY2024
+- `service_raw`: raw data for each request for service as at FY2025
 
 ## Installation
 
@@ -30,11 +42,11 @@ remotes::install_github("tesaunders/akldogs")
 
 ## Data
 
-Data is sourced from Auckland Council Animal Management [annual
-reports](https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html).
-This package contains only the most relevant data for looking at dog
-control activities. The way data has been reported over time by Animal
-Management has changed, so please note the following
+Data sourced from Auckland Council Animal Management [annual
+reports](https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html)
+contains selected data useful for looking at dog control activities. The
+way data has been reported over time by Animal Management has changed,
+so note the following:
 
 - A reduction in the known dog population from FY2017 to FY2018 is
   likely due to the removal of duplicate entries in the Auckland Council
