@@ -4,19 +4,22 @@
 \name{akldogs-package}
 \alias{akldogs}
 \alias{akldogs-package}
-\title{akldogs: Auckland Council Animal Management data}
+\title{akldogs: Auckland Council Dog Management Data}
 \description{
-Auckland Council data relating to dog control, taken from Animal Management annual reports.
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
+Data relating to managing dogs in Auckland sourced from Auckland Council Animal Management annual reports and a Local Government Official Information Act request.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://tesaunders.github.io/akldogs/}
+  \item \url{https://github.com/tesaunders/akldogs}
 }
 
 }
 \author{
-\strong{Maintainer}: Tom Saunders \email{tom.saunders@auckland.ac.nz}
+\strong{Maintainer}: Thomas E. Saunders \email{tom.saunders@auckland.ac.nz} (\href{https://orcid.org/0000-0003-1780-0314}{ORCID}) [copyright holder]
 
 }
 \keyword{internal}
