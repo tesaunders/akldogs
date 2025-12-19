@@ -11,8 +11,8 @@
 <script src="deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
 <link href="deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="deps/headroom-0.11.0/headroom.min.js"></script><script src="deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="deps/search-1.0.0/fuse.min.js"></script><script src="deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Auckland Council Dog Management Data">
-<meta name="description" content="Data relating to managing dogs in Auckland, taken from Auckland Council Animal Management annual reports.">
-<meta property="og:description" content="Data relating to managing dogs in Auckland, taken from Auckland Council Animal Management annual reports.">
+<meta name="description" content="Data relating to managing dogs in Auckland sourced from Auckland Council Animal Management annual reports and a Local Government Official Information Act request.">
+<meta property="og:description" content="Data relating to managing dogs in Auckland sourced from Auckland Council Animal Management annual reports and a Local Government Official Information Act request.">
 <meta property="og:image" content="https://tesaunders.github.io/akldogs/logo.png">
 </head>
 <body>
@@ -54,7 +54,8 @@
 </div>
 <!-- badges: start -->
 
-<p>akldogs contains data transcribed from Auckland Council’s annual Animal Management reports relating to dogs and their management in Auckland. The goal is to make this data more accessible to R users by providing the following data tables:</p>
+<p>akldogs contains data relating to dogs and their management in Auckland. Data is sourced from Auckland Council’s annual Animal Management reports and a Local Government Official Information Act request. The goal is to make this data more accessible to R users.</p>
+<p>The following summary tables are sourced from Animal Management annual reports:</p>
 <ul>
 <li>
 <code>dogs</code>: the Auckland dog population</li>
@@ -67,6 +68,15 @@
 <li>
 <code>service</code>: Animal Management requests for service</li>
 </ul>
+<p>The following tables are sourced from a Local Government Official Information Act request (#8140017948) made on 21 November 2025, and responded to on 18 December 2025:</p>
+<ul>
+<li>
+<code>dogs_raw</code>: raw data for each dog known to Animal Management as at FY2025</li>
+<li>
+<code>impounds_raw</code>: raw data for each impound event as at FY2024</li>
+<li>
+<code>service_raw</code>: raw data for each request for service as at FY2025</li>
+</ul>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -78,7 +88,7 @@
 <div class="section level2">
 <h2 id="data">Data<a class="anchor" aria-label="anchor" href="#data"></a>
 </h2>
-<p>Data is sourced from Auckland Council Animal Management <a href="https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html" class="external-link">annual reports</a>. This package contains only the most relevant data for looking at dog control activities. The way data has been reported over time by Animal Management has changed, so please note the following</p>
+<p>Data sourced from Auckland Council Animal Management <a href="https://www.aucklandcouncil.govt.nz/en/plans-policies-bylaws-reports-projects/our-policies/policy-on-dogs.html" class="external-link">annual reports</a> contains selected data useful for looking at dog control activities. The way data has been reported over time by Animal Management has changed, so note the following:</p>
 <ul>
 <li>A reduction in the known dog population from FY2017 to FY2018 is likely due to the removal of duplicate entries in the Auckland Council database.</li>
 <li>Where percentages are given instead of whole numbers, the numbers have been derived from the proportions and given to the nearest whole number, as is the case with some desexing data.</li>

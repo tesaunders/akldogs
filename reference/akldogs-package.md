@@ -1,7 +1,8 @@
-# akldogs: Auckland Council Animal Management data
+# akldogs: Auckland Council Dog Management Data
 
-Auckland Council data relating to dog control, taken from Animal
-Management annual reports.
+Data relating to managing dogs in Auckland sourced from Auckland Council
+Animal Management annual reports and a Local Government Official
+Information Act request.
 
 ## See also
 
@@ -9,6 +10,9 @@ Useful links:
 
 - <https://tesaunders.github.io/akldogs/>
 
+- <https://github.com/tesaunders/akldogs>
+
 ## Author
 
-**Maintainer**: Tom Saunders <tom.saunders@auckland.ac.nz>
+**Maintainer**: Thomas E. Saunders <tom.saunders@auckland.ac.nz>
+([ORCID](https://orcid.org/0000-0003-1780-0314)) \[copyright holder\]
