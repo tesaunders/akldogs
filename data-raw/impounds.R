@@ -3,14 +3,19 @@ library(janitor)
 library(dplyr)
 library(stringr)
 
+file_path <- list.files(path = "data-raw", 
+                        pattern = ".*impound.*\\.xlsx$|.*impound.*\\.xls$", 
+                        ignore.case = TRUE,
+                        full.names = TRUE)
 
-impounds <- read_excel(path = "data-raw/All Dog Impounds - 1.7.21-30.6.24.xlsx") |> 
+impounds <- read_excel(path = file_path) |> 
   clean_names() |> 
   mutate(
     across(
       c(suburb, primary_breed, secondary_breed),
       str_to_title
-    )
+    ),
+    suburb = str_replace_all(suburb, "Mt ", "Mount ")
   )
 
 usethis::use_data(impounds, overwrite = TRUE)
