@@ -15,5 +15,6 @@ RoxygenNote: 7.3.3
 Depends: 
     R (>= 3.5)
 LazyData: true
+LazyDataCompression:xz
 URL: https://github.com/tesaunders/akldogs
 BugReports: https://github.com/tesaunders/akldogs/issues
