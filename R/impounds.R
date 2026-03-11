@@ -1,0 +1,41 @@
+#' Auckland Council Animal Management dog impound data
+#'
+#' Data compiled by Auckland Council's Animal Management division relating to impounded dogs in Auckland for financial years 2022-2024.
+#'
+#' @source Auckland Council, official information request (#8140017948).
+#' @format Data frame with columns
+#' \describe{
+#' \item{docket_number}{Docket number assigned to impound event.}
+#' \item{shelter}{Shelter receiving impounded animal.}
+#' \item{team}{Animal Management team responsible for impound.}
+#' \item{impound_date}{Date of impound.}
+#' \item{impound_reason}{Reason for impound.}
+#' \item{exit_date}{Date impounded animal left the shelter.}
+#' \item{status}{Reason for departure.}
+#' \item{rfs_number}{Corresponding Request for Service number.}
+#' \item{street_name}{Street animal was uplifted from.}
+#' \item{suburb}{Suburb animal was uplifted from.}
+#' \item{s_57_type}{Reason for impound, if impounded under Section 57 of the Dog Control Act.}
+#' \item{severity}{Severity of attack.}
+#' \item{primary_breed}{Primary dog breed.}
+#' \item{secondary_breed}{Secondary dog breed.}
+#' \item{sex}{Sex of the animal.}
+#' \item{desexed}{Desexed status.}
+#' \item{approx_age}{Approximate age of the animal.}
+#' \item{dog_name}{Name of dog.}
+#' \item{dog_id}{Dog ID number.}
+#' \item{classified}{Whether or not the dog has a current classification under the Dog Control Act.}
+#' \item{current_classification}{Current classification under the Dog Control Act.}
+#' \item{classification_required}{Whether or not a new classification is required as a result of circumstances leading to impounding.}
+#' \item{new_classification}{Whether or not a new classification has been issued.}
+#' \item{new_classification_issued}{New classification issued as a result of circumstances leading to impounding.}
+#' \item{registered}{Whether or not dog is registered.}
+#' \item{new_reg_issued}{Whether or not a new registration has been issued for the dog.}
+#' \item{microchipped}{Whether or not the dog is microchipped.}
+#' \item{microchip_number}{Microchip ID number.}
+#' \item{new_microchip_issued}{Whether or not a new microchip ID number has been issued.}
+#' \item{known_dog}{Whether or not the dog is 'known' to Animal Management.}
+#' \item{euthanasia_reason}{Reason for euthanasia.}
+#' \item{days_in_shelter}{Number of days in the shelter.}
+#' }
+"impounds"
