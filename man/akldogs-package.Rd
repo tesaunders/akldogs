@@ -6,12 +6,15 @@
 \alias{akldogs-package}
 \title{akldogs: Dog Control Data From Auckland Council}
 \description{
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
+
 Data relating to dog registrations, impounds, and requests for service, compiled by Auckland Council's Animal Management Division and released as part of an official information request.
 }
 \seealso{
 Useful links:
 \itemize{
   \item \url{https://github.com/tesaunders/akldogs}
+  \item \url{https://tesaunders.github.io/akldogs/}
   \item Report bugs at \url{https://github.com/tesaunders/akldogs/issues}
 }
 
