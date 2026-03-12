@@ -53,4 +53,6 @@ registration <-
   ) |> 
   select(-gender_desexed, -age_group)
 
+write.csv(registration, "data-raw/registration.csv", row.names = FALSE)
+
 usethis::use_data(registration, overwrite = TRUE)

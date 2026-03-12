@@ -18,4 +18,6 @@ impounds <- read_excel(path = file_path) |>
     suburb = str_replace_all(suburb, "Mt ", "Mount ")
   )
 
+write.csv(impounds, "data-raw/impounds.csv", row.names = FALSE)
+
 usethis::use_data(impounds, overwrite = TRUE)

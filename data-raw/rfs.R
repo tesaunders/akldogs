@@ -35,4 +35,6 @@ rfs <-
       "Welfare - general" ~ "Welfare")
   ) 
   
+write.csv(rfs, "data-raw/rfs.csv", row.names = FALSE)
+
 usethis::use_data(rfs, overwrite = TRUE)
