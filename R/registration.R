@@ -7,10 +7,10 @@
 #' \describe{
 #' \item{sheet_name}{Excel sheet from which the row originates in the raw workbook.}
 #' \item{animal_id}{Animal ID number.}
+#' \item{animal_name}{Animal name.}
 #' \item{registration_latest_year}{Latest year the animal held a valid registration.}
 #' \item{animal_breed_description}{Primary breed.}
 #' \item{animal_breed2_description}{Secondary breed.}
-#' \item{animal_age}{Age of animal.}
 #' \item{classification}{Current classification under the Dog Control Act.}
 #' \item{suburb_name}{Suburb dog is registered in.}
 #' \item{owner_registration_class}{Whether the owner uses a SuperGold discount or has a RDOL.}
@@ -20,5 +20,6 @@
 #' \item{animal_desexed}{Whether or not the animal is desexed.}
 #' \item{address_area}{Region of Auckland dog is registered in.}
 #' \item{dob}{Animal's date of birth.}
+#' \item{age_group}{Animal's age (animal_age from older years has been merged in).}
 #' }
 "registration"

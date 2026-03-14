@@ -31,10 +31,9 @@ registration <-
         owner_registration_class  = "owner_registration"
       )))
   }) |> 
-  list_rbind(names_to = "sheet_name") |> 
-  type.convert(as.is = TRUE)
+  list_rbind(names_to = "sheet_name")
 
-# Fix Excel dates as integers
+# Fix Excel dates
 
 registration$dob <- as.Date(as.numeric(registration$dob), origin = "1899-12-30")
 
@@ -43,15 +42,16 @@ registration$dob <- as.Date(as.numeric(registration$dob), origin = "1899-12-30")
 registration <-
   registration |> 
   mutate(
-    animal_gender_description = str_extract(gender_desexed, "M|F"),
-    animal_desexed = ifelse(str_detect(gender_desexed, "Desexed"), "Desexed", animal_desexed),
-    animal_desexed = case_when(
-      animal_desexed %in% c("X", "Yes", "Desexed") ~ TRUE,
-      is.na(animal_desexed) ~ NA
-    ),
+    animal_gender_description = coalesce(animal_gender_description,
+                                         str_extract(gender_desexed, "M|F")),
+    animal_desexed = coalesce(animal_desexed,
+                              str_extract(gender_desexed, "Desexed")),
+    animal_desexed = case_when(animal_desexed %in% c("X", "Yes", "Desexed") ~ TRUE),
+    age_group = coalesce(age_group,
+                         animal_age),
     suburb_name = str_to_title(suburb_name)
   ) |> 
-  select(-gender_desexed, -age_group)
+  select(-gender_desexed, -animal_age)
 
 write.csv(registration, "data-raw/registration.csv", row.names = FALSE)
 
