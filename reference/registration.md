@@ -21,6 +21,10 @@ Data frame with columns
 
   Animal ID number.
 
+- animal_name:
+
+  Animal name.
+
 - registration_latest_year:
 
   Latest year the animal held a valid registration.
@@ -32,10 +36,6 @@ Data frame with columns
 - animal_breed2_description:
 
   Secondary breed.
-
-- animal_age:
-
-  Age of animal.
 
 - classification:
 
@@ -73,6 +73,10 @@ Data frame with columns
 - dob:
 
   Animal's date of birth.
+
+- age_group:
+
+  Animal's age (animal_age from older years has been merged in).
 
 ## Source
 
