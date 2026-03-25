@@ -2,6 +2,8 @@
 
 ## All functions
 
+- [`breeds`](https://tesaunders.github.io/akldogs/reference/breeds.md) :
+  Standardised breed mappings for Animal Management data
 - [`impounds`](https://tesaunders.github.io/akldogs/reference/impounds.md)
   : Auckland Council Animal Management dog impound data
 - [`locality`](https://tesaunders.github.io/akldogs/reference/locality.md)
