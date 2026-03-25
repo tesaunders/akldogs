@@ -22,6 +22,9 @@ data more accessible to R users.
 - `locality`: a helper table to standardise the relationship between
   suburbs, local boards, and regions reported in the datasets provided
   by Animal Management.
+- `breeds`: a helper table to standardise breed names for primary breeds
+  within `registration` and `impounds`, prioritising the name in
+  `registration`.
 
 Cleaned versions of the datasets, as they appear in the package, can
 also be found in CSV format in the [`data-raw` folder](data-raw/).
